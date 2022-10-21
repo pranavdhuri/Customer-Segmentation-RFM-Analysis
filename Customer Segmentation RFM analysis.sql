@@ -121,23 +121,23 @@ WITH ranked AS
 SELECT * FROM ranked 
 WHERE rank_by_revenue = 2;
 
-
- --RFM analysis
- --recency (how long ago their last purchase was),
- --frequency (how often they purchase), and 
- --monetary value (how much they spend)
+/*
+ RFM analysis
+ recency (how long ago their last purchase was),
+ frequency (how often they purchase), and 
+ monetary value (how much they spend)
  
- --Who is our best customer ?
- --last_order_date_customer = is the date when the customer last placed the order.
- --overall_last_order_date = is the date when the company last received an order.
+ Who is our best customer ?
+ last_order_date_customer = is the date when the customer last placed the order.
+ overall_last_order_date = is the date when the company last received an order.
 
- --Who are our most recent customers ?
- --recency = shows the number of days it has been since the customer last placed an order.
- --rfm_recency, rfm_frequency, rfm_monetary have values in the range 1 - 4 (1 is lowest and 4 is highest).
- --rfm_recency = closer the last_order_date_customer to the overall_last_order_date higher the cell number
- --rfm_frequency = higher the frequency higher the cell number
- --rfm_monetary = higher the monetary value higher the cell number 
-
+ Who are our most recent customers ?
+ recency = shows the number of days it has been since the customer last placed an order.
+ rfm_recency, rfm_frequency, rfm_monetary have values in the range 1 - 4 (1 is lowest and 4 is highest).
+ rfm_recency = closer the last_order_date_customer to the overall_last_order_date higher the cell number
+ rfm_frequency = higher the frequency higher the cell number
+ rfm_monetary = higher the monetary value higher the cell number 
+*/
 
  --Creating a temp table
 
