@@ -1,4 +1,4 @@
-# Vehicle-sales-RFM-Analysis
+# Customer-Segmentation-RFM-Analysis
 Performing RFM analysis on sales data (vehicles)
 I have used CTE, Window functions and created Temp tables
 
