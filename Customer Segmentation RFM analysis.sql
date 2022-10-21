@@ -12,7 +12,6 @@ SELECT DISTINCT country FROM sales_df;         --the sales are done in 19 states
 SELECT DISTINCT territory FROM sales_df;       --the sales are done in 3 territories
 SELECT DISTINCT dealsize FROM sales_df;        --3 categories for deal size
 
-
 --Analysis
 --Finding revenue and frequency by productline
 SELECT productline, ROUND(SUM(sales),0) AS revenue, COUNT(ordernumber) AS frequency
@@ -41,7 +40,6 @@ SELECT DISTINCT month_id FROM sales_df
 WHERE year_id = '2004';
 -- the company was operational for all the 12 months in 2003 and 2004
 
-
 --Finding revenue and frequency by dealsize
 SELECT dealsize, ROUND(SUM(sales),0) AS revenue, COUNT(ordernumber) AS frequency
 FROM sales_df
@@ -63,13 +61,11 @@ GROUP BY country
 ORDER BY revenue DESC;
 --Comapany earn their highest revenue from USA
 
-
 --Finding revenue and frequency by territory
 SELECT territory, ROUND(SUM(sales),0) AS revenue, COUNT(ordernumber) AS frequency 
 FROM sales_df
 GROUP BY territory
 ORDER BY revenue DESC;
-
 
 --What was the best months for sales in a specific year ? How much was earned in that month ?
 SELECT month_id, SUM(sales) AS revenue, COUNT(ordernumber) AS frequency
