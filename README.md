@@ -25,6 +25,8 @@ monetary value (how much they spent).
 
 --Who are our most recent customers ?
 
+--Creating an rfm indicator
+
 --What products are most often sold together ?
  
 
